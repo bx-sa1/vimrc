@@ -1,6 +1,6 @@
 set nocompatible
 
-call plug#begin('~/vimfiles/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
@@ -12,9 +12,9 @@ call plug#end()
 set exrc
 set secure
 
-set directory=$TEMP
-set backupdir=$TEMP
-set undodir=$TEMP
+set directory=/tmp/
+set backupdir=/tmp/
+set undodir=/tmp/
 
 syntax on
 
