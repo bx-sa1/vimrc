@@ -1,0 +1,3 @@
+{
+	"clangd.arguments": ["--log=verbose", "--query-driver=C:\\dev\\mingw-w64\\mingw64\\bin\\*"]
+}
