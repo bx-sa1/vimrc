@@ -1,6 +1,12 @@
 set nocompatible
 
-call plug#begin('~/vimfiles/plugged')
+if has('win32')
+    let $USERVIMDIR = '~/vimfiles'
+else
+    let $USERVIMDIR = '~/.vim'
+	let $TEMP = '/tmp/'
+endif
+call plug#begin($USERVIMDIR . '/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
